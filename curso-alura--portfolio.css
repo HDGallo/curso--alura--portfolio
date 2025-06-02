@@ -58,21 +58,27 @@ body {
 }
 
 .apresentacao__botao {
+  /* Box Model & Layout */
+  width: 378px;
+  padding: 21.5px 0px;
+  border: 2px solid #22D4FD;
+  border-radius: 8px;
+  
+  /* Flexbox */
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 378px;
-  text-align: center;
-  padding: 21.5px 0px;
-  text-decoration: none;
-  color: #f6f6f6;
+  
+  /* Typography */
   font-family: "Montserrat";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 36px;
-  border: 2px solid #22d4fd;
-  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #F6F6F6;
+
 }
 
 .apresentacao__botao:hover {
