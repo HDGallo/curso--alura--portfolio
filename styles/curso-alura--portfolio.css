@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap");
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-tercearia: #22d4fd;
+  --cor-houver: #272727;
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+/* asterisco (*) pega todos os elementos da pagina */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  /* ordem do padding: superior, direito, inferior, esquerdo.  */
+  padding: 2% 0% 0% 5%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__link {
+  
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor-tercearia);
+}
+
+.apresentacao {
+  padding: 5% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao__section {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__titulo {
+  font-size: 36px;
+  font-family: var(--fonte-primaria);
+}
+
+.apresentacao__titulo--destaque {
+  color: var(--cor-tercearia);
+}
+
+.apresentacao__texto {
+  font-size: 24px;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+}
+
+.apresentacao__links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.apresentacao__subtitulo {
+  font-family: var(--fonte-primaria);
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.apresentacao__botao {
+  /* Box Model & Layout (Propriedades que afetam o dimensionamento e posicionamento do box) */
+  width: 378px;
+  padding: 21.5px 0px;
+  border: 2px solid var(--cor-tercearia);
+  border-radius: 8px;
+
+  /* Flexbox */
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  /* Tipografia (propriedades relacionados ao texto)*/
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+.apresentacao__botao:hover {
+  background-color: var(--cor-houver);
+}
+
+.rodape {
+  padding: 24px;
+
+
+  color: var(--cor-primaria);
+  background-color: var(--cor-tercearia);
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  font-weight: 400;
+  
+}
